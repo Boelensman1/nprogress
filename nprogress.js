@@ -443,6 +443,9 @@
    */
 
   function addClass(element, name) {
+    if (!element) {
+      return;
+    }
     var oldList = classList(element),
         newList = oldList + name;
 
